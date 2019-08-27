@@ -1,0 +1,29 @@
+Microservices
+are way of breaking application or service down standalone indepedent applications that can run different hardware or server instances.
+they all work together by talking through REST API's
+
+Advantages
+Deployment flexibility
+scale seperately
+Technology flexibility
+
+
+
+--------------------------
+
+what is Good coding
+ Tips for coding
+ The following tips address how you and/or your development team can handle various coding tasks and how to keep everything as neat as possible.
+ ...
+ 10 Tips for Better Coding
+ Use a Coding Standard. ...
+ Write Useful Comments. ...
+ Refactor. ...
+ Avoid Global Code. ...
+ Use Meaningful Names. ...
+ Use Meaningful Structures. ...
+ Use Version Control Software.
+
+
+---------------------------------
+

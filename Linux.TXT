@@ -1,0 +1,287 @@
+ What do you understand by Linux Kernal? Is it legal to edit it?
+
+Ans: ‘Kernal’ basically refers to that core component of the computer operating
+system that provides basic services for the other parts as well as interacts with user commands.
+When it comes to ‘Linux Kernal’, it is referred as low-level system software providing an interface for user-level interactions.
+
+Linux Kernal is considered as free and open source software which is capable of managing hardware resources for the users.
+As it is released under General Public Licence (GPL), it becomes legal for anyone to edit it.
+
+
+------------------------
+
+Enlist the basic components of LINUX?
+
+Ans: Linux operating system basically consists of 3 components which are enlisted below
+
+Kernel: This is considered as the core part and is responsible for all major activities of Linux operating system. Linux Kernel is considered as free and open source software which is capable of managing hardware resources for the users. It consists of various modules and interacts directly with the underlying hardware.
+System Library: Most of the functionalities of the operating system are implemented by System Libraries. These act as a special function using which application programs accesses Kernel’s features.
+System Utility: These programs are responsible for performing specialized, individual level tasks.
+
+--------------------------
+
+Why we use LINUX?
+
+Ans: LINUX is used widely because it is completely different from other operating systems where every aspect comes with something extra i.e. some additional features. Some of the major reasons to use LINUX are listed below
+
+It is an open source operating system where programmers get the advantage of designing their own custom OS
+Software and the server licensing required to install Linux is completely free and can be installed on many computers as required
+It has low or minimum but controllable issues with viruses, malware, etc
+It is highly secured and supports multiple file systems
+
+----------------------------------
+Explain LILO?
+
+Ans: LILO (Linux Loader) is the boot loader for Linux operating system to load it into the main memory so that it can begin its operations. Bootloader here is a small program that manages a dual boot. LILO resides in MBR (Master Boot Record).
+Its major advantage is that it allows the fast bootup of Linux when installing in the MBR.
+Its limitation lies in the fact that it is not possible for all computers to tolerate modification of MBR
+
+-------------------------------------
+
+What is Swap space?
+
+Ans: Swap space is the amount of physical memory that is allocated for use by Linux to hold some concurrent running programs temporarily.
+This condition usually occurs when Ram does not have enough memory to support all concurrent running programs.
+This memory management involves the swapping of memory to and from physical storage.
+
+---------------------------------
+What do you understand by Root account?
+
+Ans: As the name suggests, it is like a system administrator account which gives you the ability
+to fully control the system. Root account serves as the default account whenever
+Linux is installed.Below mentioned functions can be performed by Root account
+
+Below mentioned functions can be performed by Root account
+
+Create user accounts
+Maintain user accounts
+Assign different permissions to each account created and so on..
+
+--------------------------------------
+Explain the term CLI?
+
+Ans: CLI stands for Command Line Interface. It is a way for humans to interact with computers and is also known as Command line user interface. It relies on textual request and response transaction process where user types declarative commands to instruct the computer to perform operations.
+
+Advantages of CLI
+
+Very flexible
+Can easily access commands
+Much faster and easier to use by expert
+Does not use much CPU processing time.
+
+----------------------------------------
+
+How can you determine the total memory used by LINUX?
+
+Ans: It is always required to keep a check on the memory usage in order to find out whether the user is able to access the server or the resources are adequate. There are roughly 5 methods that determine the total memory used by the Linux.
+
+This is explained as below
+
+Free command: This is the most simple and easy to use the command to check memory usage.
+For example: ‘$ free –m’, the option ‘m' displays all the data in MBs.
+/proc/meminfo: The next way to determine the memory usage is to read /proc/meminfo file.
+For example: ‘$ cat /proc/meminfo’
+Vmstat: This command basically lays out the memory usage statistics.
+For example: ‘$ vmstat –s’
+Top command: This command determines the total memory usage as well as also monitors the RAM usage.
+Htop: This command also displays the memory usage along with other details.
+
+----------------------------------------------
+Explain the 3 kinds of file permissions under LINUX?
+
+Ans: Every file and directory in Linux are assigned three types of owners namely ‘User’, ‘Group’, and ‘Others’.
+Find the three kinds of permissions defined for all the three owners
+
+Read: This permission allows you to open and read the file as well as list the contents of the directory.
+
+Write: This permission allows you to modify the contents of the file as well as allows adding, removing and renaming
+files stored in the directories.
+
+Execute: User can access and run the file in the directory. You cannot run a file unless the execute permission is set.
+
+----------------------------------------------
+
+How permissions are granted under LINUX?
+
+Ans: A system administrator or the owner of the file can grant permissions using the ‘chmod’ command.
+Following symbols are used while writing permissions
+
+‘+’ for adding permission
+‘-‘ for denying permission
+Permissions also includes single letter which denotes
+
+u : user; g: group; o: other; a: all; r: read; w: write; x: execute.
+
+
+----------------------------------------------
+
+What are the different modes when using the vi editor?
+
+Ans: The 3 different kinds of modes in vi editor are enlisted below
+
+Command Mode/ Regular Mode
+Insertion Mode/ Edit Mode
+Ex Mode/ Replacement Mode
+
+
+------------------------------------------------
+Explain the Linux Directory commands along with the description?
+
+Ans: Enlisted below are the directory commands along with descriptions
+
+pwd: It is a built-in command which stands for ‘print working directory’.
+It displays the current working location, working path starting with / and directory of the user. Basically, it displays the full path to the directory you are currently in.
+Is: This command list out all the files in the directed folder.
+cd: This stands for ‘change directory’. This command is used to change to the directory you want to work from the present directory. We just need to type cd followed by the directory name to access that particular directory.
+mkdir: This command is used to create an entirely new directory.
+rmdir: This command is used to remove a directory from the system.
+-------------------------------------------------
+Differentiate between Cron and Anacron?
+
+Ans: Difference between Cron and Anacron can be understood from the below table
+
+Cron
+Cron allows the user to schedule tasks to be executed every minute.
+Tasks can be scheduled by any normal user and are basically used when tasks have to be completed/executed at a particular hour or minute
+Cron expects the system to be running 24x7.
+It is ideal for servers
+
+
+Anacron allows the user to schedule tasks to be run either on a specific date or the first available cycle after the date.
+Anacron can be used only by super users and is used when a task has to be executed irrespective of hour or minute.
+Anacron does not expects the system to be running 24x7.
+It is ideal for desktops and laptops
+
+
+-------------------------------------------------------------
+
+Explain Linux Shell?
+
+Ans: For executing any commands user uses a program known as the shell.
+Linux shell is basically a user interface used for executing the commands and communicating with Linux operating system. Shell does not use the kernel to execute certain programs, create files, etc. There are several shells available with Linux which includes the following
+
+BASH (Bourne Again SHell)
+CSH ( C Shell)
+KSH ( Korn Shell)
+TCSH
+
+There are basically two types of Shell commands
+
+Built-in shell commands: These commands are called from the shell and executed directly within the shell.
+ Examples: ‘pwd’, ’help’, ’type’, ’set’, etc.
+External/ Linux commands: These commands are totally shell independent, have their own binary and are located in the file system.
+---------------------------------------------------------
+What is a Shell script?
+
+Ans: As the name suggests, the shell script is the script written for the shell. This is a program file or says a flat
+text file where certain Linux commands are executed one after another. Although the execution speed is slow,
+Shell script is easy to debug and can also simplify everyday automation processes.
+
+---------------------------------------------------------
+
+Explain the features of Stateless Linux server?
+
+Ans: The word stateless itself means ‘no state’. When on a single workstation, no state exists for the centralized server, and
+then the stateless Linux server comes into the picture. Under such conditions, scenarios like keeping all the systems on the
+same particular state can occur.
+
+Some of the features of Stateless Linux server are explained below
+
+Stores prototype of every machine
+Store snapshots
+Store home directories
+Uses LDAP which determines the snapshot of state to be run on which system.
+
+
+------------------------------------------------------------
+
+What are system calls used for process management in Linux?
+
+Ans: Process management in Linux uses certain system calls. These are mentioned in below table with a brief explanation
+
+System calls	Explanation
+Fork()	To create a new process
+Exec()	For execution of a new program
+Wait()	To make the process to wait
+Exit()	Exit/terminate the process
+Getpid()	To find the unique process id
+Getppid()	To find the parent process id
+Nice()	To bias the currently running process property
+
+------------------------------------------------------------
+
+Enlist some Linux file content commands?
+
+Ans: There are many commands present in Linux which are used to look at the contents of the file.
+
+Some of them are enlisted below
+
+head: Displays the beginning of the file
+tail: Displays the last part of the file
+cat: Concatenate files and print on the standard output.
+more: Displays the content in pager form and is used to view text in the terminal window one page or screen at a time.
+less: Displays the content in pager form and allows backward and single line movement.
+
+------------------------------------------------------------
+Explain Redirection?
+
+Ans: It is well known that every command takes an input and displays an output. Keyboard serves as the standard input device and screen serves as the standard output device. Redirection is defined as the process of directing data from one output to another or even cases exist where output serves as an input data for another process.
+
+There are basically three streams available in which input and output of Linux environment are distributed.
+
+These are explained as below
+
+Input Redirection: ‘<’ symbol is used for input redirection and is numbered as (0). Thus it is denoted as STDIN(0).
+Output Redirection: ‘>’ symbol is used for output redirection and is numbered as (1). Thus it is denoted as STDOUT(1).
+Error Redirection: It is denoted as STDERR(2).
+-------------------------------------------------------------
+
+What is know about grep commands?
+
+Ans: Grep stands for ‘global regular expression print’. This command is used for matching a regular expression against text in a file. This command performs pattern-based searching and only the matching lines are displayed as output. It makes use of options and parameters that are specified along with the command line.
+
+For example: Suppose we need to locate the phrase “our orders” in HTML file named as “order-listing.html”. Then the command will be as follows:
+
+$ grep “our orders” order-listing.html
+
+The grep command outputs the entire matching line to the terminal.
+
+----------------------------------------------------------------
+How to create a new file and modify an existing file in vi editor? Also, enlist the commands used to delete information from vi editor.?
+
+Ans: Find below the commands with the description
+
+vi filename: This is the command used to create a new file as well as modify an existing file.
+View filename: This command opens an existing file in read-only mode.
+X: This command deletes the character which is under the cursor or before the cursor location.
+dd: This command is used to delete the current line.
+
+---------------------------------------------------------------
+
+Enlist some Linux networking and troubleshooting commands?
+
+Ans: Every computer is connected to network internally or externally for the purpose of exchanging information. Network troubleshooting and configuration are essential parts of and network administration. The networking commands enable you to quickly troubleshoot connection issues with another system, check the response of another host, etc.
+
+Network administrator maintains system network which includes network configuration and troubleshooting. Mentioned below are few commands along with their description:
+
+Mentioned below are few commands along with their description
+
+Hostname: To view the hostname (domain and IP address) of the machine and to set the hostname.
+Ping: To check if the remote server is reachable or not.
+ifconfig: To display and manipulate route and network interfaces. It displays network configuration. ‘ip’ is the replacement of ifconfig command.
+netstat: It displays network connections, routing tables, interface statistics. ‘ss’ is the replacement of netstat command which is used to get more information.
+Traceroute: It is network troubleshooting utility which is used to find the number of hops required for a particular packet to reach the destination.
+Tracepath: It is same as traceroute with a difference that it does not require root privileges.
+Dig: This command is used to query the DNS name servers for any task related to DNS lookup.
+nslookup: To find DNS related query.
+Route: It shows the details of the route table and manipulates IP routing table.
+mtr: This command combines ping and track path into a single command.
+Ifplugstatus: This command tells us whether the network cable is plugged in or not.
+
+
+
+---------------------------------------------------------------------
+
+
+
+
